@@ -5,7 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Para Você ❤️</title>
+<script>
+function tocarMusica() {
+    const audio = document.getElementById("musica");
 
+    audio.play()
+        .then(() => {
+            console.log("Música iniciada");
+        })
+        .catch((erro) => {
+            console.log("Erro:", erro);
+        });
+}
+</script>
 <style>
 
 *{
@@ -184,9 +196,14 @@ footer{
 </audio>
 
 <div class="container">
-    <button class="btn-musica" onclick="document.getElementById('musica').play()">
+    <!--<button class="btn-musica" onclick="document.getElementById('musica').play()">
         🌻 Clique para ouvir uma música
-        </button>  
+        </button> -->  
+
+<button class="btn-musica" onclick="tocarMusica()">
+    🌻 Ouvir nossa música
+</button>
+
         <br>
         <br><br>
 
