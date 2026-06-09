@@ -122,16 +122,41 @@ footer{
         opacity: 1;
     }
 }
+.btn-musica{
+    margin-top: 20px;
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #f4c542;
+    color: #3a2d1f;
+
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow:0 4px 12px rgba(0, 0, 0, .25) ;
+
+    transition: .3s;
+
+}
+.btn-musica:hover{
+    transform: scale(1.05);
+}
 
 </style>
 </head>
 <body>
-
+     
 <audio autoplay loop>
-    <source src="audio/musica.mp3" type="audio/mpeg">
+    <source src="audio/musicaa.mp3" type="audio/mpeg">
 </audio>
 
 <div class="container">
+    <button class="btn-musica" onclick="document.getElementById('musica').play()">
+        🌻 Clique para ouvir uma música
+        </button>  
+        <br>
+        <br><br>
 
     <div class="polaroid">
         <img src="img/foto.jpeg" alt="Nossa Foto">
