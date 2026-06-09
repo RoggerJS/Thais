@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Você ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background-image:url("assets/fundo.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family: Georgia, serif;
+
+    position:relative;
+
+    animation: aparecer 2s ease;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+}
+
+.container{
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:700px;
+
+    text-align:center;
+    padding:30px;
+}
+
+.polaroid{
+    background:white;
+    padding:15px 15px 60px 15px;
+    display:inline-block;
+    transition: 0.4s;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.4);
+
+    transform:rotate(-2deg);
+}
+.polaroid:hover{
+    transform: rotate(0deg) scale(1.03);
+}
+.polaroid img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    
+}
+
+.note{
+    margin-top:40px;
+
+    background-image:url("assets/papel.jpg");
+    background-size:cover;
+    background-position:center;
+
+    padding:40px;
+
+    border-radius:8px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.35);
+
+    color:#3a2d1f;
+
+    line-height:1.8;
+    font-size:1.1rem;
+
+    text-align:left;
+}
+
+.note h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+footer{
+    margin-top:30px;
+    color:white;
+    font-size:.9rem;
+    text-shadow:1px 1px 5px black;
+}
+
+@media(max-width:768px){
+
+    .note{
+        padding:25px;
+        font-size:1rem;
+    }
+
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <div class="polaroid">
+        <img src="img/foto.jpeg" alt="Nossa Foto">
+    </div>
+
+    <div class="note">
+
+        <h2>Para Você</h2>
+
+        <p>
+            Aqui você coloca a carta que pretende escrever.
+            Pode ser algo simples, sincero e pessoal.
+            O objetivo deste espaço é parecer uma nota guardada
+            dentro de uma caixa antiga de lembranças.
+        </p>
+         <p>
+            Aqui você coloca a carta que pretende escrever.
+            Pode ser algo simples, sincero e pessoal.
+            O objetivo deste espaço é parecer uma nota guardada
+            dentro de uma caixa antiga de lembranças.
+        </p>
+
+        <br>
+
+        <p>
+            Você pode escrever vários parágrafos aqui,
+            falar sobre momentos especiais,
+            sobre o que sente,
+            ou apenas agradecer pela presença dela na sua vida.
+        </p>
+
+    </div>
+
+    <footer>
+        Feito por Rogger, com carinho ❤️
+    </footer>
+
+</div>
+ 
+</body>
+</html>
