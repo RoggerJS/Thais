@@ -17,6 +17,14 @@ function tocarMusica() {
             console.log("Erro:", erro);
         });
 }
+
+function tocarMusica() {
+    const audio = document.getElementById("musica");
+
+    audio.play();
+
+    document.querySelector(".btn-musica").style.display = "none";
+}
 </script>
 <style>
 
